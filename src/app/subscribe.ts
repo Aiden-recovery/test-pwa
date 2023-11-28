@@ -1,5 +1,5 @@
-import {CONFIG} from "@/app/webPushConfig";
-import {saveSubscription} from "@/app/saveSubscription";
+import {CONFIG} from "@/src/app/webPushConfig";
+import {saveSubscription} from "@/src/app/saveSubscription";
 
 export async function subscribe() {
     await window?.Notification.requestPermission();

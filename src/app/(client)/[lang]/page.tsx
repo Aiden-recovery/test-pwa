@@ -1,4 +1,4 @@
-import Client from "@/app/(client)/[lang]/client";
+import Client from "@/src/app/(client)/[lang]/client";
 
 interface PageProps {
   params: { lang: string };
