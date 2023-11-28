@@ -1,4 +1,12 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+const {InjectManifest} = require('workbox-webpack-plugin');
 
-module.exports = nextConfig
+module.exports = {
+    webpack: (config, options) => {
+        config.plugins.push(new InjectManifest({
+            swSrc: 'service-worker.js',
+            swDest: '../public/service-worker.js',
+        }))
+
+        return config
+    },
+}
