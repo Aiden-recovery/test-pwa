@@ -1,5 +1,4 @@
 import {CONFIG} from "@/app/webPushConfig";
-import {saveSubscription} from "@/app/saveSubscription";
 
 export async function subscribe() {
     await window?.Notification.requestPermission();
