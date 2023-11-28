@@ -2,6 +2,8 @@
 .idea
 public/sw.js
 public/workbox-*.js
+public/swe-*.js
+public/worker-*.js
 # dependencies
 /node_modules
 /.pnp
