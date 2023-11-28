@@ -7,11 +7,7 @@ import {subscribe} from "@/app/subscribe";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <button onClick={async () => {
-        await subscribe();
-      }}>
-        subscribe
-      </button>
+
     </main>
   )
 }

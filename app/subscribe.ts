@@ -1,4 +1,5 @@
 import {CONFIG} from "@/app/webPushConfig";
+import {saveSubscription} from "@/app/saveSubscription";
 
 export async function subscribe() {
     await window?.Notification.requestPermission();
@@ -13,7 +14,7 @@ export async function subscribe() {
         const subscription = await swRegistration?.pushManager.subscribe(options)
 
         if (subscription) {
-            // await saveSubscription(subscription)
+            await saveSubscription(subscription)
         }
 
         console.log({subscription})
