@@ -36,6 +36,7 @@ export default function manifest(): MetadataRoute.Manifest {
         "prefer_related_applications": false,
         "screenshots": [
             {
+                // @ts-ignore
                 "form_factor": "wide",
                 "label": "Homescreen of Awesome App",
                 "sizes": "1080x1920",
@@ -43,6 +44,7 @@ export default function manifest(): MetadataRoute.Manifest {
                 "type": "image/jpg"
             },
             {
+                // @ts-ignore
                 "form_factor": "narrow",
                 "label": "Homescreen of Awesome App",
                 "sizes": "1080x1920",
